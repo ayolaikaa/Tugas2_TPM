@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+
+    <TextView
+        android:id="@+id/teks1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="125dp"
+        android:text="Kalkulator"
+        android:textSize="20sp"
+        android:textColor="#6804ec"
+        android:fontFamily="monospace"/>
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="                masukkan angka 1"
+        android:inputType="number"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        tools:ignore="MissingConstraints, UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num1"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="30dp"
+        android:autofillHints=""
+        android:hint="                masukkan angka 1"
+        android:inputType="number"
+        tools:ignore="MissingConstraints,UnusedAttribute" />
+
+    <Button
+        android:id="@+id/tambah"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/num2"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/kurang"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@id/num2"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/kali"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:layout_marginLeft="190dp"
+        android:layout_below="@id/num2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bagi"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:layout_marginLeft="260dp"
+        android:layout_below="@id/num2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_below="@id/tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:textSize="20dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>
